@@ -178,6 +178,31 @@
               <div class="pb-2"><ul style="list-style-type: '👉 '; line-height: 2;"><small><li><a href="https://sites.google.com/view/jerzy-szajewski/" target="_blank">Witryny Google</a></li><li><a href="https://pl.linkedin.com/in/jerzy-szajewski" target="_blank">Profil LinkedIN</a></li><li><a href="https://warszawa.naszemiasto.pl/mieszkaniec/artystaplastyk" target="_blank">Warszawa Naszemiasto</a></li><li><a href="https://jerzyszajewski.pl.tl/" target="_blank">Strona WWW J. S.</a></li><li><a href="http://jerzy.szajewski.galeriasart.pl/" target="_blank">Galeria SART</a>&nbsp;<small>(bez HTTPS)</small></li><li><a href="https://warszawa.naszemiasto.pl/mieszkaniec/artykul/kopie-malarstwa-dawnych-mistrzow-artysta-plastyk,415796,t,id.html" target="_blank">J.S. - naszemiasto.pl</a></li><li><a href="http://www.firmy.net/9MXK4,malarstwo-olejne,5HNP.html" target="_blank">Firmy.net - J.S.</a></li><li><a href="https://pl.pinterest.com/jerzy_szajewski/" target="_blank">Pinterest - profil</a></li><li><a href="https://jerzy-szajewski-kopie-obrazow-olejnych-portrety-na.jimdosite.com/" target="_blank">Strona z galerią</a></li><li><a href="https://www.clippings.me/users/szajewski" target="_blank">Portfolio Clippings.me</a></li><li><a href="https://szajewski.oferteo.pl/" target="_blank">Oferta na oferteo.pl</a></li><li><a href="https://www.artmajeur.com/jerzy-szajewski?_locale=pl" target="_blank">Profil Artmajeur.com</a></small></li></ul></div>
             </div>
               
+            <div class="col-sm-5">
+              <div class="pb-2 fw-bolder"><i class="fas fa-laptop pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Pokaz slajdów</div>
+            </div>
+            <div class="col-sm-7">
+              <div class="pb-2"><script type="text/javascript">
+  ile=5; //ile jest obrazkow
+  //no need to edit below
+  i=0;
+  function galeria(){
+    document.getElementById('obrazek').src=i+'.jpg';
+    if(i<ile-1){
+      i++
+    }else{
+      i=0
+    }
+    setTimeout('galeria()',1000)
+  }
+  window.onload=function(){
+    for(x=0; x<ile; x++){
+      new Image().src=x+'.jpg'
+    }
+    galeria()
+  }
+  </script><img alt="Pokaz slajdów" width="150" height="150" id="obrazek" src="images/0.jpg"></div>
+            </div>
               
             
           </div>
