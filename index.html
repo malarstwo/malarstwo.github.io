@@ -130,17 +130,25 @@
   
   //no need to edit below
   i=0;
-  d=i++;       
+  d=1;
+  b=2;
+  c=3;
   function galeria(){
     document.getElementById('obrazeka').src='images/'+i+'.jpg';
     document.getElementById('obrazekd').src='images/'+d+'.jpg';
+    document.getElementById('obrazeka').src='images/'+b+'.jpg';
+    document.getElementById('obrazekd').src='images/'+c+'.jpg';
     
     if(i<ile-1){
       i++
-      
+      d++
+      b++
+      c++
     }else{
       i=0
-      
+      d=1
+      b=2
+      c=3
       
       
     }
@@ -154,7 +162,7 @@
       
     }
     
-    galeria()
+    galeria();
   }
   </script><img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
 box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek1" width="200" height="200" id="obrazeka" src="images/0.jpg">
