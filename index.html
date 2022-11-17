@@ -125,21 +125,35 @@
             
             
             
-            </small></p> <script>
+            </small></p><script>
   ile=18; //ile jest obrazkow
+  ilejest=18;
   //no need to edit below
   i=0;
-  z=0;        
+  z=7;        
   function galeria(){
     document.getElementById('obrazek').src='images/'+i+'.jpg';
     document.getElementById('obrazekb').src='images/'+z+'.jpg';
     if(i<ile-1){
       i++
-      z++
+      
     }else{
       i=0
-      z=0
+      
+      
+      
     }
+    
+    if(z<ilejest-1){
+      z++
+      
+    }else{
+      
+      z=0
+      
+      
+    }
+    
     setTimeout('galeria()',3000)
   }
   window.onload=function(){
@@ -147,20 +161,20 @@
       new Image().src='images/'+x+'.jpg'
       
     }
-    for(y=0; y<ile; y++){
-      new Image().src='images/'+y+'.jpg'
+    for(y=0; y<ilejest; y++){
+      new Image2().src='images/'+y+'.jpg'
       
     }
     galeria()
   }
   </script><img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
-box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek1" width="200" height="200" id="obrazek" src="images/0.jpg">
+box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek1" width="200" height="200" id="obrazek" src="">
           <img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
-box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek2" width="200" height="200" id="obrazek" src="images/1.jpg">
+box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek2" width="200" height="200" id="" src="images/1.jpg">
           <img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
-box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek3" width="200" height="200" id="obrazekb" src="images/2.jpg">
+box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek3" width="200" height="200" id="obrazekb" src="">
           <img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
-box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek4" width="200" height="200" id="obrazek" src="images/3.jpg">
+box-shadow: 1px 1px 10px 1px #000000;" alt="Obrazek4" width="200" height="200" id="" src="images/3.jpg">
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
