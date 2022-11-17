@@ -127,13 +127,14 @@
             
             </small></p><script>
   ile=18; //ile jest obrazkow
-  ilejest=18;
+  
   //no need to edit below
   i=0;
-  z=7;        
+  d=i++;       
   function galeria(){
     document.getElementById('obrazeka').src='images/'+i+'.jpg';
-    document.getElementById('obrazekb').src='images/'+z+'.jpg';
+    document.getElementById('obrazekd').src='images/'+d+'.jpg';
+    
     if(i<ile-1){
       i++
       
@@ -144,15 +145,7 @@
       
     }
     
-    if(z<ilejest-1){
-      z++
-      
-    }else{
-      z=0
-      
-      
-    }
-    
+   
     setTimeout('galeria()',3000)
   }
   window.onload=function(){
@@ -160,10 +153,7 @@
       new Image().src='images/'+x+'.jpg'
       
     }
-    for(y=0; y<ilejest; y++){
-      new Image2().src='images/'+y+'.jpg'
-      
-    }
+    
     galeria()
   }
   </script><img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
