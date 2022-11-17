@@ -127,7 +127,7 @@
             </small></p><img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
 box-shadow: 1px 1px 10px 1px #000000;" alt="Pokaz slajdów (4s) - włącz JS w przeglądarce" width="200" height="200" id="obrazek" src="images/7.jpg">
           <img style="-webkit-box-shadow: 1px 1px 10px 1px #000000; 
-box-shadow: 1px 1px 10px 1px #000000;" alt="Pokaz slajdów (4s) - włącz JS w przeglądarce" width="200" height="200" id="obrazek" src="images/0.jpg">
+box-shadow: 1px 1px 10px 1px #000000;" alt="Pokaz slajdów (4s) - włącz JS w przeglądarce" width="200" height="200" id="obrazek2" src="images/0.jpg">
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
@@ -200,9 +200,28 @@ box-shadow: 1px 1px 10px 1px #000000;" alt="Pokaz slajdów (4s) - włącz JS w p
   }
   window.onload=function(){
     for(x=0; x<ile; x++){
-      new Image().src='images/'+x+'.jpg'
+      new Image2().src='images/'+x+'.jpg'
     }
     galeria()
+  }
+  </script><script>
+  ile2=18; //ile jest obrazkow
+  //no need to edit below
+  z=0;
+  function galeria2(){
+    document.getElementById('obrazek2').src='images/'+i+'.jpg';
+    if(z<ile2-1){
+      z++
+    }else{
+      z=0
+    }
+    setTimeout('galeria2()',4000)
+  }
+  window.onload=function(){
+    for(y=0; y<ile2; y++){
+      new Image2().src='images/'+y+'.jpg'
+    }
+    galeria2()
   }
   </script></div>
             </div>
